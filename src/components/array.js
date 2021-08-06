@@ -77,7 +77,7 @@
     {
     bookname: "Finding Your Own North Star: Claiming The Life You Were Meant To Live",
     author:" Martha N. Beck",
-    quote: `Career miracles happen when you’re so in love with your life that pushing yourself is actually easier than stopping, when you “do without doing.” Joyful activity adds real value to the world, and adding value is the heart and soul of a successful career.`    
+    quote: `Career miracles happen when you’re so in love with your life that pushing yourself is actually easier than stopping, when you “do without doing.”`    
     },
     {
     bookname: "If You Have to Cry, Go Outside: And Other Things Your Mother Never Told You",

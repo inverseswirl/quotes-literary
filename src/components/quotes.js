@@ -1,6 +1,6 @@
 import React from 'react';
 import {quotesarray} from '../components/array';
-import Timer from './timer';
+
 
 
 
@@ -32,16 +32,16 @@ const{num}=this.state
            
      {
        num === 0 && (
-        <p className="quote">" {quotesarray[num].quote} " <br/> - {quotesarray[num].author}</p>
+        <p className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> -{quotesarray[num].author}<br/>({quotesarray[num].bookname})</span></p>
        )  
      }
 
     { num !== 0 && (
-              <p   className="quote">" {quotesarray[num].quote} " <br/> - {quotesarray[num].author}</p> 
+              <p   className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> -{quotesarray[num].author}<br/>({quotesarray[num].bookname})</span></p> 
           ) 
     } 
 
-     <Timer />
+     
 
                 
             </div>

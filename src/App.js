@@ -2,12 +2,13 @@
 import React from 'react';
 import './App.css';
 import Quotes from './components/quotes';
+import Timer from './components/timer';
 
 
 
 
 const images= [
-  'https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  'https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_1280.jpg',
 
  'https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
  'https://images.pexels.com/photos/1431464/pexels-photo-1431464.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
@@ -27,7 +28,8 @@ const images= [
  'https://images.pexels.com/photos/8780732/pexels-photo-8780732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
  'https://cdn.pixabay.com/photo/2018/08/11/12/32/white-ling-3598577_1280.jpg',
  'https://cdn.pixabay.com/photo/2020/04/22/06/47/hydrangea-5076212_1280.jpg',
- 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+ 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+ 'https://cdn.pixabay.com/photo/2016/09/19/22/46/lake-1681485_1280.jpg'
 
 
 ]
@@ -41,7 +43,7 @@ class App extends React.Component {
   
 componentDidMount(){
   window.onload= setInterval(()=>
-       this.setState({  arrnumber: Math.floor(Math.random() * 20)})
+       this.setState({  arrnumber: Math.floor(Math.random() * 21)})
   , 10000)
 }
 
@@ -57,6 +59,7 @@ console.log(images.length)
     <div className="App" style={{backgroundImage: `url(${images[this.state.arrnumber]}`  }} >
 
    <Quotes /> 
+   <Timer />
   
      
     </div>
