@@ -30,7 +30,7 @@ class  Timer extends React.Component{
 
     return(
         <div className="timer">
-            <span>{dates}<hr/>{hours >= 0 && hours <10 ? `0${hours}` : hours}:{minutes  >= 0 && minutes < 10 ? `0${minutes}`: minutes } {hours <24 && hours >12 ? "p.m" : "a.m"} </span>
+            <span>{dates}<hr />{hours >= 0 && hours <10 ? `0${hours}` : hours}:{minutes  >= 0 && minutes < 10 ? `0${minutes}`: minutes } {hours <24 && hours >12 ? "p.m" : "a.m"} </span>
         </div>
     )
 }

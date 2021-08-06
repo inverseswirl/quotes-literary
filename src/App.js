@@ -8,7 +8,7 @@ import Timer from './components/timer';
 
 
 const images= [
-  'https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_1280.jpg',
+  'https://cdn.pixabay.com/photo/2018/02/16/02/03/pocket-watch-3156771_1280.jpg',
 
  'https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
  'https://images.pexels.com/photos/1431464/pexels-photo-1431464.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
