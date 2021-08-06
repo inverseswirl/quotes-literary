@@ -6,47 +6,42 @@ import {quotesarray} from '../components/array';
 class Quotes extends React.Component{
    constructor(props){
        super(props)
-       this.state={load: false}
+       this.state={ num: 0 }
    }
 
   componentDidMount(){
     setInterval(()=>
-    this.setState({load: true }),15000)
+    this.setState({
+        num : Math.floor(Math.random() * 15) 
+    }) ,15000)
+
+}
+ 
+   
+
+render(){
+
+const{num}=this.state
 
 
-  }
+ return(
+
+    <div className="quotes">
+            <h1 className="headline">Literary Quotes Hub</h1>
+           
+     {
+       num === 0 && (
+        <p className="quote">" {quotesarray[num].quote} " - {quotesarray[num].author}</p>
+       )  
+     }
+
+    { num !== 0 && (
+              <p   className="quote">" {quotesarray[num].quote} " - {quotesarray[num].author}</p> 
+          ) 
+    } 
 
 
-    render(){
 
-const{load}=this.state
-
-
-
-        return(
-
-            <div className="quotes">
-                <h1>Literary Quotes Hub</h1>
-               
-                {/* <button onClick={}>Submit</button> */}
-
-         {
-             !load && (
-                 <p className="quote">" {quotesarray[2][1].quote} "</p>
-             )
-         }
-           { load && (
-                  <p   className="quote">" {quotesarray[Math.floor(Math.random() * 3 )][Math.floor(Math.random() * 5)].quote} "</p> 
-              ) 
-              } 
-                  
-                    
-                
-                
-                
-                
-                
-                
                 
             </div>
         )
@@ -55,3 +50,25 @@ const{load}=this.state
 }
 
 export default Quotes;
+   
+   
+    
+ 
+  
+
+
+
+        
+        
+
+
+
+
+                   
+                    
+                
+                
+                
+                
+                
+                

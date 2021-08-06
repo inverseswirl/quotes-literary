@@ -6,7 +6,7 @@
 
     //lifequotes
   
-    [
+    
    {
     
     bookname: "It's Not Like It's a Secret",
@@ -40,10 +40,10 @@
     quote: `No matter how difficult and painful it may be, nothing sounds as good to the soul as the truth.`
     },
     
-],
+
 
   //travelquotes
-  [
+  
     {
     bookname: "How Reading Changed My Life",
     author: "Anna Quindlen",
@@ -51,7 +51,7 @@
     },
     {
     bookname: "How to Understand Israel in 60 Days or Less",
-    author: "Sarah Glidden,",
+    author: "Sarah Glidden",
     quote: `One thing that I love about traveling is feeling disoriented and removed from my comfort zone.`
     },
     {
@@ -68,12 +68,12 @@
     bookname: "Fahrenheit 451",
     author: "Ray Bradbury",
     quote: `See the world. It's more fantastic than any dream made or paid for in factories.`
-    }
+    },
     
-],
+
 
     ///career quotes
-    [
+   
     {
     bookname: "Finding Your Own North Star: Claiming The Life You Were Meant To Live",
     author:" Martha N. Beck",
@@ -101,7 +101,7 @@
     }
 
             
-]    
+   
   
 
 ]
