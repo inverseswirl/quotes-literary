@@ -5,6 +5,7 @@ import Quotes from './components/quotes';
 
 
 
+
 const images= [
   'https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
 
@@ -22,6 +23,12 @@ const images= [
  'https://cdn.pixabay.com/photo/2016/11/21/14/47/kitten-1845789_1280.jpg',
  'https://cdn.pixabay.com/photo/2015/03/30/12/37/jellyfish-698521_1280.jpg',
  "https://images.pexels.com/photos/2131856/pexels-photo-2131856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+ 'https://images.pexels.com/photos/2845013/pexels-photo-2845013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+ 'https://images.pexels.com/photos/8780732/pexels-photo-8780732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+ 'https://cdn.pixabay.com/photo/2018/08/11/12/32/white-ling-3598577_1280.jpg',
+ 'https://cdn.pixabay.com/photo/2020/04/22/06/47/hydrangea-5076212_1280.jpg',
+ 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+
 
 ]
 
@@ -33,9 +40,9 @@ class App extends React.Component {
 
   
 componentDidMount(){
-  setInterval(()=>
-       this.setState({  arrnumber: Math.floor(Math.random() * 15)})
-  , 8000)
+  window.onload= setInterval(()=>
+       this.setState({  arrnumber: Math.floor(Math.random() * 20)})
+  , 10000)
 }
 
 
@@ -49,7 +56,8 @@ console.log(images.length)
   return (
     <div className="App" style={{backgroundImage: `url(${images[this.state.arrnumber]}`  }} >
 
-   <Quotes />
+   <Quotes /> 
+  
      
     </div>
   );

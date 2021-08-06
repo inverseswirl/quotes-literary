@@ -1,5 +1,6 @@
 import React from 'react';
 import {quotesarray} from '../components/array';
+import Timer from './timer';
 
 
 
@@ -10,7 +11,7 @@ class Quotes extends React.Component{
    }
 
   componentDidMount(){
-    setInterval(()=>
+   window.onload= setInterval(()=>
     this.setState({
         num : Math.floor(Math.random() * 15) 
     }) ,15000)
@@ -31,16 +32,16 @@ const{num}=this.state
            
      {
        num === 0 && (
-        <p className="quote">" {quotesarray[num].quote} " - {quotesarray[num].author}</p>
+        <p className="quote">" {quotesarray[num].quote} " <br/> - {quotesarray[num].author}</p>
        )  
      }
 
     { num !== 0 && (
-              <p   className="quote">" {quotesarray[num].quote} " - {quotesarray[num].author}</p> 
+              <p   className="quote">" {quotesarray[num].quote} " <br/> - {quotesarray[num].author}</p> 
           ) 
     } 
 
-
+     <Timer />
 
                 
             </div>
