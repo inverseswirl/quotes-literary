@@ -13,7 +13,10 @@ const images= [
  'https://images.pexels.com/photos/159872/book-open-pages-literature-159872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
  'https://images.pexels.com/photos/5028845/pexels-photo-5028845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
  'https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
- 'https://images.pexels.com/photos/2364633/pexels-photo-2364633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+ 'https://images.pexels.com/photos/2364633/pexels-photo-2364633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+ 'https://cdn.pixabay.com/photo/2019/03/17/07/24/pollination-4060404_1280.jpg',
+ 'https://cdn.pixabay.com/photo/2016/01/05/17/51/maltese-1123016_1280.jpg',
+ 'https://cdn.pixabay.com/photo/2017/04/19/13/03/coffee-2242213_1280.jpg'
 
 ]
 
@@ -26,8 +29,8 @@ class App extends React.Component {
   
 componentDidMount(){
   setInterval(()=>
-       this.setState({  arrnumber: Math.floor(Math.random() * 7)})
-  , 15000)
+       this.setState({  arrnumber: Math.floor(Math.random() * 10)})
+  , 5000)
 }
 
 
@@ -37,7 +40,7 @@ componentDidMount(){
 render(){
 
   
-console.log(this.state.arrnumber)
+// console.log(images.length)
   return (
     <div className="App" style={{backgroundImage: `url(${quote}),url(${images[this.state.arrnumber]}`  }} >
 

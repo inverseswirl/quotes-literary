@@ -27,7 +27,7 @@ const{num}=this.state
  return(
 
     <div className="quotes">
-            <h1 className="headline">Literary Quotes Hub</h1>
+            <h1 className="topline">Literary Quotes</h1>
            
      {
        num === 0 && (
