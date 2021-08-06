@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 import Quotes from './components/quotes';
-// import quote from './img/quote.png';
+
 
 
 const images= [
@@ -35,7 +35,7 @@ class App extends React.Component {
 componentDidMount(){
   setInterval(()=>
        this.setState({  arrnumber: Math.floor(Math.random() * 15)})
-  , 3000)
+  , 8000)
 }
 
 
