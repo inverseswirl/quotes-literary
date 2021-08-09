@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 .App {
   text-align: center;
+  background-image: linear-gradient(10deg,rgba(31, 31,31,0.9),transparent 140%);
   background-size:100% 100%;
-  background-position:  100% 100%;
+  background-position:  100% 100%; 
   height:100vh;
   width:100vw;
   position: relative;
-  transition: background 2.8s ease-in ;
+  background-repeat: no-repeat;
   overflow: hidden;
+
 
   
 }
 
+.background{
+    background-size:100% 100%;
+   background-position:  100% 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+    z-index: -1;
+    transition: background 0.85s ease-in ;
+    height:100vh;
+    width:100vw;
 
+}
 
 .quotes{
  
   padding-top: 0vh;
+  
  
   
 
@@ -29,7 +43,7 @@
   right: 0%;
   text-align: center;
   font-size: 1rem;
-  background-image: radial-gradient( rgb(209, 209, 209) 0% ,rgba(194, 208, 216, 0.75) 90%);
+  background-image: linear-gradient(150deg,rgba(192, 192, 192, 1),transparent 250%);
   padding: 2px 8px;
   border-top-left-radius: 2px;
   font-family: 'Libre Baskerville', serif;
@@ -37,30 +51,43 @@
  
 }
 .quote{
-   margin: 55vh 0vw 0 57vw;
-   font-size: 1.3rem;
-   font-weight: 700;
+   margin: 66vh 35vw 0 2vw;
+   font-size: 1.5rem;
+   font-weight: 900;
    font-family: 'Libre Baskerville', serif;
-   background-image: linear-gradient(110deg,rgba(192, 192, 192, 1),rgb(206, 212, 216),transparent 122%);
    background-size: 100% 100%;
-   padding: 12px 6vw 12px 1vw;
+   padding: 1% 6vw 1% 1.5%;
    border-top-left-radius: 2px;
    border-bottom-left-radius: 2px;
-   color: rgb(20, 10, 10);
+   color: whitesmoke;
    text-align: left;
-   line-height: 1.9rem;
+   line-height: 2.1rem;
+
+   
   
 
 }
 
 .authorname{
-  font-size: 0.8rem;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 15px !important;
+  display: inline-flex;
+}
+  
+
+
+.bookname{
+  font-size: 0.95rem;
   font-weight: 400;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-
+  justify-content:flex-start;
+  padding-left: 4px;
+  font-family: 'Crimson Text', serif;
+  line-height: 0.5rem;
 }
+
+
 
 
 
@@ -70,17 +97,16 @@
 
 .timer{
   font-family: 'Libre Baskerville', serif;
-  color: black;
-  padding: 5px 10px ;
+  color: whitesmoke;
   border-top-right-radius: 2px;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 900;
   display: flex;
-  justify-content: center;
-  width:15%;
-  background-image: linear-gradient(250deg,rgba(192, 192, 192, 1) 0%,transparent 130%);
+  justify-content: flex-end;
+  width:20%;
   position:fixed;
-  bottom: 0px;
+  top: 15px;
+  right:25px;
 
  
 }

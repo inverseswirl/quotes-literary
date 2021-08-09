@@ -39,6 +39,11 @@
     author: "Martha Beck",
     quote: `No matter how difficult and painful it may be, nothing sounds as good to the soul as the truth.`
     },
+    {
+    bookname: "Life, the Truth, and Being Free",
+    author: "Steve Maraboli",
+    quote: `Incredible change happens in your life when you decide to take control of what you do have power over instead of craving control over what you don't.`
+    },
     
 
 
@@ -98,7 +103,86 @@
     bookname: "Grit",
     author:"Angela Duckworth",
     quote: `as much as talent counts, effort counts twice.`
-    }
+    },
+
+
+    //relationship quotes
+
+
+    {
+      bookname: "The Intern",
+      author:"Jess C. Scott,",
+      quote: `When someone loves you, the way they talk about you is different. You feel safe and comfortable.`
+      },
+    {
+      bookname: " The Last Song",
+      author:" Nicholas Sparks",
+      quote: `I mean, if the relationship can't survive the long term, why on earth would it be worth my time and energy for the short term?`
+      },
+ 
+    {
+      bookname: " The Prince and the Pauper",
+      author:" Jaachynma N.E. Agu",
+      quote: `You are not in competition with anybody except yourself, plan to outdo your past not other people.`
+    },
+    {
+      bookname: "  Life, the Truth, and Being Free",
+      author:"  Steve Maraboli",
+      quote: `How would your life be different if…You stopped making negative judgmental assumptions about people you encounter? Let today be the day…You look for the good in everyone you meet and respect their journey.`
+    },
+    {
+      bookname: " Milk and Honey",
+      author:"  Rupi Kaur",
+      quote: `do not look for healing
+      at the feet of those
+      who broke you`
+    },
+    {
+      bookname: " Milk and Honey",
+      author:"  Rupi Kaur",
+      quote: `The kindest words my father said to me -
+      Women like you drown oceans.`
+    },
+
+
+
+    //motivation quotes
+    {
+      bookname: " Unapologetically You: Reflections on Life and the Human Experience",
+      author:"  Steve Maraboli",
+      quote: `The most powerful relationship you will ever have is the relationship with yourself. It is in this relationship that you set the standard for all others.`
+    },
+    
+
+    //science quotes
+    {
+      bookname: "  Astrophysics for People in a Hurry",
+      author:" Neil deGrasse Tyson",
+      quote: `Time to get cosmic. There are more stars in the universe than grains of sand on any beach, more stars than seconds have passed since Earth formed, more stars than words and sounds ever uttered by all the humans who ever lived.`
+    },
+
+
+
+
+    ///society quotes
+
+    {
+      bookname: "Small Gods",
+      author:" Terry Pratchett",
+      quote:`... a man needs no camel to ride to hell, yea, nor horse, nor mule; a man may ride into hell on his tongue...`
+      
+    },
+    {
+      bookname: "The Mountain Is You: Transforming Self-Sabotage Into Self-Mastery",
+      author:"Brianna Wiest, ",
+      quote:`One day, the mountain that is in front of you will be so far behind you, it will barely be visible in the distance. But the person you become in learning to get over it? That will stay with you forever.`
+    },
+
+
+   
+    
+ 
+    
 
             
    

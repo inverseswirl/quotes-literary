@@ -13,8 +13,8 @@ class Quotes extends React.Component{
   componentDidMount(){
    window.onload= setInterval(()=>
     this.setState({
-        num : Math.floor(Math.random() * 15) 
-    }) ,15000)
+        num : Math.floor(Math.random() * 26) 
+    }) ,25000)
 
 }
  
@@ -25,6 +25,7 @@ render(){
 const{num}=this.state
 
 
+
  return(
 
     <div className="quotes">
@@ -32,12 +33,12 @@ const{num}=this.state
            
      {
        num === 0 && (
-        <p className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> -{quotesarray[num].author}<br/>({quotesarray[num].bookname})</span></p>
+        <p className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> - {quotesarray[num].author}</span><br/><span className="bookname"> ({quotesarray[num].bookname})</span></p>
        )  
      }
 
     { num !== 0 && (
-              <p   className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> -{quotesarray[num].author}<br/>({quotesarray[num].bookname})</span></p> 
+              <p   className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> - {quotesarray[num].author}</span><br/><span className="bookname"> ({quotesarray[num].bookname})</span></p> 
           ) 
     } 
 
