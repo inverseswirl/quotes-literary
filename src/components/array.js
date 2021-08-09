@@ -104,7 +104,13 @@
     author:"Angela Duckworth",
     quote: `as much as talent counts, effort counts twice.`
     },
-
+   
+   {
+    bookname: " Indistractable: How to Control Your Attention and Choose Your Life",
+    author:"Nir Eyal",
+    quote: `Most people don’t want to acknowledge the uncomfortable truth that distraction is always an unhealthy escape from reality.`
+    },
+  
 
     //relationship quotes
 

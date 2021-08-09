@@ -4,34 +4,39 @@ import React from 'react';
 class  Timer extends React.Component{
     constructor(props){
         super(props)
-        this.state={dates: "",hours: 0,minutes:0, seconds: 0}
+        this.state={hours: 0,minutes:0, date:""}
         this.timer=this.timer.bind(this)
     }
 
     componentDidMount(){
-       window.onload= setInterval(this.timer ,1000)
+       setInterval(this.timer ,1000)
       
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer)
     }
    timer(){
       const date =new Date();
       this.setState({
-          dates: date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear(),
           hours: date.getHours(),
           minutes: date.getMinutes(),
-          seconds: date.getSeconds()
+          date: date.toLocaleDateString()
+       
         })
     }
 
    
 
   render(){
-      const{dates,hours,minutes}=this.state
+      const{hours,minutes,date}=this.state
 
 
     return(
         <div className="timer">
-            <span>{dates}<hr/>{hours >= 0 && hours <10 ? `0${hours}` : hours}:{minutes  >= 0 && minutes < 10 ? `0${minutes}`: minutes } {hours <24 && hours >12 ? "p.m" : "a.m"} </span>
+        
+            <span>{date}<hr/>{hours >= 0 && hours <10 ? `0${hours}` : hours}:{minutes  >= 0 && minutes < 10 ? `0${minutes}`: minutes } {hours <24 && hours >12 ? "p.m" : "a.m"} </span>
         </div>
+
     )
 }
 }

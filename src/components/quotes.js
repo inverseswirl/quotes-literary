@@ -8,21 +8,30 @@ class Quotes extends React.Component{
    constructor(props){
        super(props)
        this.state={ num: 0 }
+       this.timer=this.timer.bind(this);
    }
 
-  componentDidMount(){
-   window.onload= setInterval(()=>
+
+   timer(){
     this.setState({
-        num : Math.floor(Math.random() * 26) 
-    }) ,25000)
+        num : Math.floor(Math.random() * 27) 
+    }) 
+   }
+  componentDidMount(){
+    setInterval(this.timer,25000)
 
 }
+
+  componentWillUnmount(){
+     clearInterval(this.timer, 25000)
+  }
  
    
 
 render(){
 
 const{num}=this.state
+console.log(quotesarray.length)
 
 
 
