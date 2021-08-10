@@ -1,4 +1,4 @@
-import React from 'react';
+
 import airgondola from '../img/airgondola.jpeg';
 import bee from    '../img/bee.jpeg';
 import buddha from '../img/buddha.jpeg';
