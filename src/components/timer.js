@@ -4,7 +4,7 @@ import React from 'react';
 class  Timer extends React.Component{
     constructor(props){
         super(props)
-        this.state={hours: 0,minutes:0, date:""}
+        this.state={hours: 0,minutes:0, date:"01/01/2021"}
         this.timer=this.timer.bind(this)
     }
 
