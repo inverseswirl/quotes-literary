@@ -18,12 +18,12 @@ class Quotes extends React.Component{
     }) 
    }
   componentDidMount(){
-    setInterval(this.timer,25000)
+    setInterval(this.timer,20000)
 
 }
 
   componentWillUnmount(){
-     clearInterval(this.timer, 25000)
+     clearInterval(this.timer, 20000)
   }
  
    
@@ -37,7 +37,7 @@ console.log(quotesarray.length)
 
  return(
 
-    <div className="quotes">
+    <div className="quotes" >
             <h1 className="topline">Literary Quotes </h1>
            
      {
@@ -47,7 +47,7 @@ console.log(quotesarray.length)
      }
 
     { num !== 0 && (
-              <p   className="quote">"{quotesarray[num].quote}" <br/><span className="authorname"> - {quotesarray[num].author}</span><br/><span className="bookname"> ({quotesarray[num].bookname})</span></p> 
+              <p   className="quote" style={{}}>"{quotesarray[num].quote}" <br/><span className="authorname"> - {quotesarray[num].author}</span><br/><span className="bookname"> ({quotesarray[num].bookname})</span></p> 
           ) 
     } 
 

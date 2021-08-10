@@ -3,7 +3,7 @@
 
 .App {
   text-align: center;
-  background-image: linear-gradient(10deg,rgba(31, 31,31,0.9),transparent 140%);
+  background-image: linear-gradient(10deg,rgba(31, 31,31,0.9),transparent 150%);
   background-size:100% 100%;
   background-position:  100% 100%; 
   height:100vh;
@@ -17,12 +17,11 @@
 }
 
 .background{
-    background-size:100% 100%;
+  background-size:100% 100%;
    background-position:  100% 100%;
    background-repeat: no-repeat;
    position: absolute;
     z-index: -1;
-    transition: background 0.85s ease-in ;
     height:100vh;
     width:100vw;
 
@@ -31,10 +30,20 @@
 .quotes{
  
   padding-top: 0vh;
+
+
   
  
   
 
+}
+@keyframes opaque{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:1
+  }
 }
 .topline{
   color: black;
@@ -99,14 +108,13 @@
   font-family: 'Libre Baskerville', serif;
   color: whitesmoke;
   border-top-right-radius: 2px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 900;
   display: flex;
   justify-content: flex-end;
-  width:20%;
   position:fixed;
   top: 15px;
-  right:25px;
+  right:40px;
 
  
 }

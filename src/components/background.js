@@ -21,7 +21,7 @@ class Background  extends React.Component{
         console.log(images.length)
 
     return(
-        <div className="background" style={{backgroundImage: `url(${images[arrnumber]}`  }}>    </div>
+        <div className="background" style={{backgroundImage: `url(${images[arrnumber]}`, transition: arrnumber ? 'background 2.5s ease-in 1s' : 'none'  }}>    </div>
     )
 }
 }
