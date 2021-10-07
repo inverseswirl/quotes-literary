@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
+
+body{
+  height:100vh;
+  width:100vw;
+}
 .App {
   text-align: center;
   background-image: linear-gradient(10deg,rgba(31, 31,31,0.9),transparent 150%);
@@ -120,6 +125,13 @@
 }
 
 
-
-
+/* @media (orientation: landscape) {
+  .App {
+    transform: rotate(-90deg);
+    width: 100vh;
+    height:100vw;
+    
+    ;
+  }
+} */
 
