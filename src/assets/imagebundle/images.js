@@ -24,7 +24,7 @@ import  turtle from '../img/turtle.jpeg';
 
 
 
- export const images= [  airgondola, bee, buddha,clock,coffee,dog1,dog2,flower1,
+export const images= [  airgondola, bee, buddha,clock,coffee,dog1,dog2,flower1,
 japan,kitten1,kualalumpur,lake1,sydney,whiteling,wolf,pollination,maltesepup,turtle
 
 ]
