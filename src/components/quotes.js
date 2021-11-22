@@ -18,12 +18,12 @@ class Quotes extends React.Component{
     }) 
    }
   componentDidMount(){
-    setInterval(this.timer,20000)
+    setInterval(this.timer,6000)
 
 }
 
   componentWillUnmount(){
-     clearInterval(this.timer, 20000)
+     clearInterval(this.timer, 6000)
   }
  
    
