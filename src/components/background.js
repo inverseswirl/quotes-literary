@@ -12,7 +12,7 @@ class Background  extends React.Component{
     componentDidMount(){
         window.onload= setInterval(()=>
              this.setState({  arrnumber: Math.floor(Math.random() * 18)})
-        , 30000)
+        , 7000)
       }
       
     render(){
